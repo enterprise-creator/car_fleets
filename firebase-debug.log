@@ -1,0 +1,60 @@
+[debug] [2023-07-27T16:56:07.187Z] ----------------------------------------------------------------------
+[debug] [2023-07-27T16:56:07.188Z] Command:       /Users/dj/.nvm/versions/node/v18.17.0/bin/node /Users/dj/.nvm/versions/node/v18.17.0/bin/firebase init firestore
+[debug] [2023-07-27T16:56:07.189Z] CLI Version:   12.4.5
+[debug] [2023-07-27T16:56:07.189Z] Platform:      darwin
+[debug] [2023-07-27T16:56:07.189Z] Node Version:  v18.17.0
+[debug] [2023-07-27T16:56:07.193Z] Time:          Thu Jul 27 2023 09:56:07 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-07-27T16:56:07.193Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-27T16:56:07.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-27T16:56:07.225Z] > authorizing via signed-in user (djaykamat@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/dj/Desktop/cars_data_app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-27T16:56:07.227Z] Using project from CLI flag: fir-project-8efcd
+[debug] [2023-07-27T16:56:07.228Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-project-8efcd [none]
+[debug] [2023-07-27T16:56:07.436Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-project-8efcd 200
+[debug] [2023-07-27T16:56:07.437Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-project-8efcd {"projectId":"fir-project-8efcd","projectNumber":"48133128965","displayName":"demo-project","name":"projects/fir-project-8efcd","resources":{"hostingSite":"fir-project-8efcd"},"state":"ACTIVE","etag":"1_0f06cc66-2b6f-4017-ba98-b2f4bb5b3758"}
+[info] i  Using project fir-project-8efcd (demo-project) 
+[info] 
+=== Firestore Setup
+[debug] [2023-07-27T16:56:07.446Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fir-project-8efcd/services/firestore.googleapis.com [none]
+[debug] [2023-07-27T16:56:07.446Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fir-project-8efcd/services/firestore.googleapis.com x-goog-quota-user=projects/fir-project-8efcd
+[debug] [2023-07-27T16:56:08.018Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fir-project-8efcd/services/firestore.googleapis.com 200
+[debug] [2023-07-27T16:56:08.018Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fir-project-8efcd/services/firestore.googleapis.com [omitted]
+[debug] [2023-07-27T16:56:08.019Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/fir-project-8efcd/databases/(default) [none]
+[debug] [2023-07-27T16:56:08.374Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/fir-project-8efcd/databases/(default) 200
+[debug] [2023-07-27T16:56:08.375Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/fir-project-8efcd/databases/(default) {"name":"projects/fir-project-8efcd/databases/(default)","uid":"483a0d95-e48c-4fd2-95c8-02ea8d9550a7","createTime":"2023-07-20T01:07:27.831748Z","updateTime":"2023-07-20T01:07:27.831748Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-07-27T15:56:08.371335Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IKnEzbmtr4ADMJXuoNuOnIAD"}
+[debug] [2023-07-27T16:56:08.375Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-07-27T16:56:08.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-27T16:56:08.375Z] > authorizing via signed-in user (djaykamat@gmail.com)
+[debug] [2023-07-27T16:56:08.375Z] [iam] checking project fir-project-8efcd for permissions ["firebase.projects.get"]
+[debug] [2023-07-27T16:56:08.376Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-project-8efcd:testIamPermissions [none]
+[debug] [2023-07-27T16:56:08.376Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-project-8efcd:testIamPermissions x-goog-quota-user=projects/fir-project-8efcd
+[debug] [2023-07-27T16:56:08.376Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-project-8efcd:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-27T16:56:08.487Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-project-8efcd:testIamPermissions 200
+[debug] [2023-07-27T16:56:08.487Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-project-8efcd:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
